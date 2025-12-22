@@ -1,0 +1,48 @@
+[2025-12-20T03:46:22.685+0000] {processor.py:161} INFO - Started process (PID=14730) to work on /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T03:46:22.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/house_prices_pipeline.py for tasks to queue
+[2025-12-20T03:46:22.696+0000] {logging_mixin.py:188} INFO - [2025-12-20T03:46:22.693+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:47:40.374+0000] {processor.py:161} INFO - Started process (PID=14808) to work on /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:47:40.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/house_prices_pipeline.py for tasks to queue
+[2025-12-20T09:47:40.376+0000] {logging_mixin.py:188} INFO - [2025-12-20T09:47:40.375+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:47:41.192+0000] {processor.py:840} INFO - DAG(s) 'house_prices_pipeline' retrieved from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:47:41.218+0000] {logging_mixin.py:188} INFO - [2025-12-20T09:47:41.217+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-12-20T09:47:41.239+0000] {logging_mixin.py:188} INFO - [2025-12-20T09:47:41.239+0000] {dag.py:3834} INFO - Setting next_dagrun for house_prices_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-20T09:47:41.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/house_prices_pipeline.py took 0.890 seconds
+[2025-12-20T09:48:11.970+0000] {processor.py:161} INFO - Started process (PID=14829) to work on /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:48:11.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/house_prices_pipeline.py for tasks to queue
+[2025-12-20T09:48:11.971+0000] {logging_mixin.py:188} INFO - [2025-12-20T09:48:11.971+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:48:12.745+0000] {processor.py:840} INFO - DAG(s) 'house_prices_pipeline' retrieved from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:48:12.770+0000] {logging_mixin.py:188} INFO - [2025-12-20T09:48:12.769+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-12-20T09:48:12.792+0000] {logging_mixin.py:188} INFO - [2025-12-20T09:48:12.791+0000] {dag.py:3834} INFO - Setting next_dagrun for house_prices_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-20T09:48:12.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/house_prices_pipeline.py took 0.841 seconds
+[2025-12-20T09:48:43.429+0000] {processor.py:161} INFO - Started process (PID=14850) to work on /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:48:43.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/house_prices_pipeline.py for tasks to queue
+[2025-12-20T09:48:43.431+0000] {logging_mixin.py:188} INFO - [2025-12-20T09:48:43.431+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:48:44.155+0000] {processor.py:840} INFO - DAG(s) 'house_prices_pipeline' retrieved from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T09:48:44.177+0000] {logging_mixin.py:188} INFO - [2025-12-20T09:48:44.177+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-12-20T09:48:44.198+0000] {logging_mixin.py:188} INFO - [2025-12-20T09:48:44.198+0000] {dag.py:3834} INFO - Setting next_dagrun for house_prices_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-20T09:48:44.216+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/house_prices_pipeline.py took 0.790 seconds
+[2025-12-20T11:46:56.117+0000] {processor.py:161} INFO - Started process (PID=14873) to work on /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T11:46:56.119+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/house_prices_pipeline.py for tasks to queue
+[2025-12-20T11:46:56.121+0000] {logging_mixin.py:188} INFO - [2025-12-20T11:46:56.120+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T12:47:44.776+0000] {processor.py:161} INFO - Started process (PID=14896) to work on /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T12:47:44.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/house_prices_pipeline.py for tasks to queue
+[2025-12-20T12:47:44.778+0000] {logging_mixin.py:188} INFO - [2025-12-20T12:47:44.777+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T12:47:45.533+0000] {processor.py:840} INFO - DAG(s) 'house_prices_pipeline' retrieved from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T12:47:45.555+0000] {logging_mixin.py:188} INFO - [2025-12-20T12:47:45.555+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-12-20T12:47:45.573+0000] {logging_mixin.py:188} INFO - [2025-12-20T12:47:45.573+0000] {dag.py:3834} INFO - Setting next_dagrun for house_prices_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-20T12:47:45.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/house_prices_pipeline.py took 0.820 seconds
+[2025-12-20T12:48:15.792+0000] {processor.py:161} INFO - Started process (PID=14917) to work on /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T12:48:15.793+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/house_prices_pipeline.py for tasks to queue
+[2025-12-20T12:48:15.794+0000] {logging_mixin.py:188} INFO - [2025-12-20T12:48:15.794+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T12:48:16.474+0000] {processor.py:840} INFO - DAG(s) 'house_prices_pipeline' retrieved from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T12:48:16.499+0000] {logging_mixin.py:188} INFO - [2025-12-20T12:48:16.499+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-12-20T12:48:16.520+0000] {logging_mixin.py:188} INFO - [2025-12-20T12:48:16.520+0000] {dag.py:3834} INFO - Setting next_dagrun for house_prices_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-20T12:48:16.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/house_prices_pipeline.py took 0.751 seconds
+[2025-12-20T21:47:10.069+0000] {processor.py:161} INFO - Started process (PID=14939) to work on /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T21:47:10.079+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/house_prices_pipeline.py for tasks to queue
+[2025-12-20T21:47:10.087+0000] {logging_mixin.py:188} INFO - [2025-12-20T21:47:10.087+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T21:47:12.148+0000] {processor.py:840} INFO - DAG(s) 'house_prices_pipeline' retrieved from /opt/airflow/dags/house_prices_pipeline.py
+[2025-12-20T21:47:12.210+0000] {logging_mixin.py:188} INFO - [2025-12-20T21:47:12.209+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-12-20T21:47:12.273+0000] {logging_mixin.py:188} INFO - [2025-12-20T21:47:12.272+0000] {dag.py:3834} INFO - Setting next_dagrun for house_prices_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-20T21:47:12.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/house_prices_pipeline.py took 2.283 seconds

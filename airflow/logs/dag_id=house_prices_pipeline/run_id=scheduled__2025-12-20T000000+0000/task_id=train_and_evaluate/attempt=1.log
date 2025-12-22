@@ -1,0 +1,26 @@
+[2025-12-21T09:47:21.648+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: house_prices_pipeline.train_and_evaluate scheduled__2025-12-20T00:00:00+00:00 [queued]>
+[2025-12-21T09:47:21.656+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: house_prices_pipeline.train_and_evaluate scheduled__2025-12-20T00:00:00+00:00 [queued]>
+[2025-12-21T09:47:21.657+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2025-12-21T09:47:21.670+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): train_and_evaluate> on 2025-12-20 00:00:00+00:00
+[2025-12-21T09:47:21.679+0000] {standard_task_runner.py:60} INFO - Started process 15037 to run task
+[2025-12-21T09:47:21.681+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'house_prices_pipeline', 'train_and_evaluate', 'scheduled__2025-12-20T00:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/house_prices_pipeline.py', '--cfg-path', '/tmp/tmpldgp9e6v']
+[2025-12-21T09:47:21.683+0000] {standard_task_runner.py:88} INFO - Job 29: Subtask train_and_evaluate
+[2025-12-21T09:47:21.731+0000] {task_command.py:423} INFO - Running <TaskInstance: house_prices_pipeline.train_and_evaluate scheduled__2025-12-20T00:00:00+00:00 [running]> on host 322b5dae5a4a
+[2025-12-21T09:47:21.821+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='house_prices_pipeline' AIRFLOW_CTX_TASK_ID='train_and_evaluate' AIRFLOW_CTX_EXECUTION_DATE='2025-12-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-20T00:00:00+00:00'
+[2025-12-21T09:47:21.961+0000] {base.py:83} INFO - Using connection ID 'hp_postgres' for task execution.
+[2025-12-21T09:47:21.968+0000] {sql.py:542} INFO - Running statement: 
+        INSERT INTO model.model_runs (run_id, model_name, params, train_rows, test_rows, model_path, preproc_path)
+        VALUES (%s, %s, %s::jsonb, %s, %s, %s, %s)
+        ON CONFLICT (run_id) DO NOTHING
+        , parameters: ('20251221_094714', 'Ridge', '{"alpha": 20.0}', 1168, 292, '/opt/project/models/model_20251221_094714.joblib', '/opt/project/models/preprocessors_20251221_094714.joblib')
+[2025-12-21T09:47:21.970+0000] {sql.py:551} INFO - Rows affected: 1
+[2025-12-21T09:47:21.977+0000] {sql.py:542} INFO - Running statement: 
+        INSERT INTO model.model_metrics (run_id, metric_name, metric_value)
+        VALUES (%s, %s, %s)
+        ON CONFLICT (run_id, metric_name) DO UPDATE SET metric_value=EXCLUDED.metric_value
+        , parameters: ('20251221_094714', 'rmsle', 0.13764892866081144)
+[2025-12-21T09:47:21.979+0000] {sql.py:551} INFO - Rows affected: 1
+[2025-12-21T09:47:21.980+0000] {python.py:202} INFO - Done. Returned value was: None
+[2025-12-21T09:47:21.991+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=house_prices_pipeline, task_id=train_and_evaluate, execution_date=20251220T000000, start_date=20251221T094721, end_date=20251221T094721
+[2025-12-21T09:47:22.015+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-21T09:47:22.038+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

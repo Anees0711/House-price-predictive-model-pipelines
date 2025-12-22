@@ -1,0 +1,14 @@
+[2025-12-20T09:47:23.412+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: house_prices_pipeline.batch_score_test scheduled__2025-12-19T00:00:00+00:00 [queued]>
+[2025-12-20T09:47:23.420+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: house_prices_pipeline.batch_score_test scheduled__2025-12-19T00:00:00+00:00 [queued]>
+[2025-12-20T09:47:23.420+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2025-12-20T09:47:23.432+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): batch_score_test> on 2025-12-19 00:00:00+00:00
+[2025-12-20T09:47:23.443+0000] {standard_task_runner.py:60} INFO - Started process 14807 to run task
+[2025-12-20T09:47:23.446+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'house_prices_pipeline', 'batch_score_test', 'scheduled__2025-12-19T00:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/house_prices_pipeline.py', '--cfg-path', '/tmp/tmpkngzj5t1']
+[2025-12-20T09:47:23.448+0000] {standard_task_runner.py:88} INFO - Job 26: Subtask batch_score_test
+[2025-12-20T09:47:23.500+0000] {task_command.py:423} INFO - Running <TaskInstance: house_prices_pipeline.batch_score_test scheduled__2025-12-19T00:00:00+00:00 [running]> on host 322b5dae5a4a
+[2025-12-20T09:47:23.581+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='house_prices_pipeline' AIRFLOW_CTX_TASK_ID='batch_score_test' AIRFLOW_CTX_EXECUTION_DATE='2025-12-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-19T00:00:00+00:00'
+[2025-12-20T09:47:23.665+0000] {base.py:83} INFO - Using connection ID 'hp_postgres' for task execution.
+[2025-12-20T09:47:23.904+0000] {python.py:202} INFO - Done. Returned value was: None
+[2025-12-20T09:47:23.914+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=house_prices_pipeline, task_id=batch_score_test, execution_date=20251219T000000, start_date=20251220T094723, end_date=20251220T094723
+[2025-12-20T09:47:23.946+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-20T09:47:23.964+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

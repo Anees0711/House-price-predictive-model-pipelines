@@ -1,0 +1,28 @@
+[2025-12-22T09:47:21.201+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: house_prices_pipeline.data_quality_check scheduled__2025-12-21T00:00:00+00:00 [queued]>
+[2025-12-22T09:47:21.213+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: house_prices_pipeline.data_quality_check scheduled__2025-12-21T00:00:00+00:00 [queued]>
+[2025-12-22T09:47:21.214+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2025-12-22T09:47:21.234+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): data_quality_check> on 2025-12-21 00:00:00+00:00
+[2025-12-22T09:47:21.248+0000] {standard_task_runner.py:60} INFO - Started process 15210 to run task
+[2025-12-22T09:47:21.252+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'house_prices_pipeline', 'data_quality_check', 'scheduled__2025-12-21T00:00:00+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/house_prices_pipeline.py', '--cfg-path', '/tmp/tmpc7sn2g2o']
+[2025-12-22T09:47:21.254+0000] {standard_task_runner.py:88} INFO - Job 32: Subtask data_quality_check
+[2025-12-22T09:47:21.316+0000] {task_command.py:423} INFO - Running <TaskInstance: house_prices_pipeline.data_quality_check scheduled__2025-12-21T00:00:00+00:00 [running]> on host 322b5dae5a4a
+[2025-12-22T09:47:21.414+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='house_prices_pipeline' AIRFLOW_CTX_TASK_ID='data_quality_check' AIRFLOW_CTX_EXECUTION_DATE='2025-12-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-21T00:00:00+00:00'
+[2025-12-22T09:47:21.491+0000] {base.py:83} INFO - Using connection ID 'hp_postgres' for task execution.
+[2025-12-22T09:47:21.498+0000] {sql.py:542} INFO - Running statement: 
+        INSERT INTO monitoring.data_quality_runs (run_id, dataset, missing_rate, row_count)
+        VALUES (%s, 'train', %s, %s)
+        ON CONFLICT (run_id, dataset) DO UPDATE SET
+          missing_rate=EXCLUDED.missing_rate, row_count=EXCLUDED.row_count
+        , parameters: ('20251222_094713', 0.058895653644512096, 1460)
+[2025-12-22T09:47:21.499+0000] {sql.py:551} INFO - Rows affected: 1
+[2025-12-22T09:47:21.514+0000] {sql.py:542} INFO - Running statement: 
+        INSERT INTO monitoring.data_quality_runs (run_id, dataset, missing_rate, row_count)
+        VALUES (%s, 'test', %s, %s)
+        ON CONFLICT (run_id, dataset) DO UPDATE SET
+          missing_rate=EXCLUDED.missing_rate, row_count=EXCLUDED.row_count
+        , parameters: ('20251222_094713', 0.059972583961617545, 1459)
+[2025-12-22T09:47:21.516+0000] {sql.py:551} INFO - Rows affected: 1
+[2025-12-22T09:47:21.518+0000] {python.py:202} INFO - Done. Returned value was: None
+[2025-12-22T09:47:21.530+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=house_prices_pipeline, task_id=data_quality_check, execution_date=20251221T000000, start_date=20251222T094721, end_date=20251222T094721
+[2025-12-22T09:47:21.586+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-22T09:47:21.619+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
